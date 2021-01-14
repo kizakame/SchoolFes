@@ -3,20 +3,20 @@
 
 @font-face {
 font-family: 'komorebi';
-  src: url('/fonts/komorebi_gothic_p.otf');
+  src: url('../fonts/komorebi_gothic_p.otf');
 }
 @font-face {
 font-family: 'rondeB';
-  src: url('/fonts/Ronde-B_square.otf');
+  src: url('../fonts/Ronde-B_square.otf');
 }
 @font-face {
 font-family: 'honokamin';
-  src: url('/fonts/font_1_honokamin.ttf');
+  src: url('../fonts/font_1_honokamin.ttf');
 }
 
 @font-face {
 font-family: 'kokoro';
-  src: url('/fonts/Kokoro.otf');
+  src: url('../fonts/Kokoro.otf');
 }
 
 
@@ -48,7 +48,7 @@ a {
 .header{
     margin-top: 0px;
     padding-bottom: 14%;
-    background-image: url(/1x/headernew.png);
+    background-image: url(../1x/headernew.png);
     position: sticky;
     top: 0px;
     background-size: 100%;
@@ -56,16 +56,7 @@ a {
     z-index: 10;
 }
 
-/*
-.header{
-    padding-bottom: 14%;
-    background-image: url(/1x/header.png);
-    position: sticky;
-    top: 0px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-*/
+
 
 button.top-page{
     position: relative;

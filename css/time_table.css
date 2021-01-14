@@ -19,7 +19,7 @@ body {
 
 .header{
     padding-bottom: 14%;
-    background-image: url(/1x/headernew.png);
+    background-image: url(../1x/headernew.png);
     position: sticky;
     top: 0px;
     background-size: 100%;
@@ -37,16 +37,6 @@ body {
     height: 15vw;
 }
 
-/*
-.header{
-    padding-bottom: 14%;
-    background-image: url(/1x/header.png);
-    position: sticky;
-    top: 0px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-*/
 
 button.top-page{
     position: relative;
@@ -142,13 +132,7 @@ background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
  text-align: center;
 }
 
-/*
-h2{
-    position: relative;
-    top: -8vw;
-    font-size: 40px;
-}
-*/
+
 
 /* line 14, /Users/moe/Desktop/文化祭ホームページ/time_table.scss */
 *, *:before, *:after {

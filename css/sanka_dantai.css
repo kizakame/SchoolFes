@@ -3,7 +3,7 @@
 
 @font-face {
 font-family: 'rondeB';
-  src: url('/fonts/Ronde-B_square.otf');
+  src: url('../fonts/Ronde-B_square.otf');
 }
 
 html {
@@ -25,7 +25,7 @@ body {
 
 .header{
     padding-bottom: 14%;
-    background-image: url(/1x/headernew.png);
+    background-image: url(../1x/headernew.png);
     position: sticky;
     top: 0px;
     background-size: 100%;
