@@ -17,37 +17,7 @@ font-family: 'suushiki.wolf';
 font-family: 'rondeB';
   src: url('/fonts/Ronde-B_square.otf');
 }
-/*
-.top-top{
-    background-image: url(/1x/cool-background.png);
-    width: 100%;
-    height: auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    display: block;
-    content: "";
-    padding-top: 50%;
-    position: relative;
-    overflow: scroll;
-}
-*/
 
-/*
-#particles-js{
-    position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-*/
-/*
-.top-top::before {
-	display:block;
-	content:"";
-	padding-top:  50%; 
-}
-*/
 
 #square{
     height: 60vw;
@@ -134,7 +104,7 @@ h2{
 
 .main{
 /*    padding-bottom: 100%;*/
-    background-image: url(/1x/background.png);
+    background-image: url(../1x/background.png);
     width: 100%;
     height: 112.44vw;
     background-size: 100%;
@@ -146,7 +116,7 @@ h2{
 
 .header{
     padding-bottom: 14%;
-    background-image: url(/1x/headernew.png);
+    background-image: url(../1x/headernew.png);
     position: sticky;
     top: 0px;
     background-size: 100%;
