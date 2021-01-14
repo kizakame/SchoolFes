@@ -1,0 +1,479 @@
+@charset "UTF-8";
+@font-face {
+font-family: 'rondeB';
+  src: url('/fonts/Ronde-B_square.otf');
+}
+/* line 5, /Users/moe/Desktop/文化祭ホームページ/time_table.scss */
+html {
+  font-size: 16px; 
+}
+
+/* line 9, /Users/moe/Desktop/文化祭ホームページ/time_table.scss */
+body {
+  background-color: #CCFF99;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in;
+  margin: 0;
+  background-size: 100%;
+}
+
+.header{
+    padding-bottom: 14%;
+    background-image: url(/1x/headernew.png);
+    position: sticky;
+    top: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+.letters{
+    z-index: 3;
+    position: relative;
+    top: 10vw;
+    left: 20vw;
+    display: block;
+    width: 30vw;
+    height: 15vw;
+}
+
+/*
+.header{
+    padding-bottom: 14%;
+    background-image: url(/1x/header.png);
+    position: sticky;
+    top: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+*/
+
+button.top-page{
+    position: relative;
+    width: 7vw;
+    top: 1vw;
+    left: 10vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+button.top-page :hover{
+    position: relative;
+    width: 7vw;
+    top: 1vw;
+    left: 10vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: coral;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+
+button.timetable{
+    position: relative;
+    width: 7vw;
+    top: 0.5vw;
+    left: 25vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+button.sannkadanntai{
+    position: relative;
+    width: 7vw;
+    top: 1vw;
+    left: 45vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+button.kaisaijouhou{
+    position: relative;
+    width: 7vw;
+    top: 1vw;
+    left: 60vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+h1{
+position: relative;
+top: -6vw;
+text-align: center;
+position: relative;
+padding: 0.25em 0;
+font-family: "rondeB";
+}
+h1:after {
+content: "";
+display: block;
+height: 4px;
+background: -moz-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+}
+
+.time-table{
+ position: relative;
+ top: -5vw;
+ text-align: center;
+}
+
+/*
+h2{
+    position: relative;
+    top: -8vw;
+    font-size: 40px;
+}
+*/
+
+/* line 14, /Users/moe/Desktop/文化祭ホームページ/time_table.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 17, /Users/moe/Desktop/文化祭ホームページ/time_table.scss */
+.div{
+    z-index: 0;
+}
+
+.cssgrid > div {
+  background: #FFFFCC;
+  overflow: auto;
+  min-width: 3;
+  padding: 1em;
+}
+
+}
+/* line 14, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 17, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+a {
+  color: white;
+  text-decoration: none; }
+
+/* line 19, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu-wrapper {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  display: block;
+  width: 30rem;
+  height: 30rem;
+  margin-top: -15rem;
+  margin-left: -15rem; }
+
+/* line 30, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu {
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transform-origin: center;
+  transition: all 0.08s ease-in-out; }
+  /* line 37, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 4rem;
+    height: 80%;
+    margin-top: -12rem;
+    margin-left: -2rem;
+    text-align: center; }
+    /* line 48, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+    .menu li.spin {
+      z-index: 5; }
+      /* line 50, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+      .menu li.spin .icon-holder {
+        animation: spin 0.7s linear forwards; }
+      /* line 51, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+      .menu li.spin .circle-holder {
+        display: block; }
+        /* line 53, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+        .menu li.spin .circle-holder circle {
+          animation: dash 0.7s linear forwards; }
+  /* line 58, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu a {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin-top: 4.5rem;
+    padding: 1rem;
+    border-radius: 100%;
+    transform: scale(1, 1); }
+    /* line 68, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+    .menu a i {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1.2; }
+  /* line 75, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu.open {
+    transform: scale(1); }
+
+/* line 81, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.icon-holder {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 4rem;
+  height: 100%; }
+
+/* line 89, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.circle-holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  display: none;
+  width: 24rem;
+  height: 24rem;
+  margin: -12rem;
+  padding: 1rem;
+  transform: rotate(-90deg); }
+  /* line 101, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .circle-holder circle {
+    width: 100%;
+    height: 100%;
+    stroke-width: 4rem;
+    stroke-dasharray: 560;
+    stroke-dashoffset: 560;
+    stroke-linecap: round; }
+
+/* line 111, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: -2rem;
+  padding: 1.3rem;
+  background: white;
+  border: none;
+  box-shadow: none;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 1;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0; }
+  /* line 132, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu-btn i {
+    position: relative;
+    z-index: 11;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 0.1rem;
+    margin: 0 auto;
+    background: #2c3e50; }
+  /* line 142, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu-btn i:nth-child(2) {
+    margin: 0.34rem auto; }
+
+/* line 148, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.clicked.menu-btn {
+  animation: buttonactive ease-in 0.2s forwards 1; }
+  /* line 151, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .clicked.menu-btn i:first-child {
+    animation: top-down ease-in 0.2s forwards 1; }
+  /* line 154, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .clicked.menu-btn i:nth-child(2) {
+    animation: middle ease-in 0.01s forwards 1; }
+  /* line 157, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .clicked.menu-btn i:nth-child(3) {
+    animation: down-top ease-in 0.2s forwards 1; }
+
+/* line 162, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.clicked .ripple {
+  animation: ripples ease-in 0.35s forwards 1; }
+
+/* line 167, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.ripple {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  z-index: 10;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  transform: scale(0.5);
+  opacity: 0;
+  border: 2rem solid white;
+  border-radius: 100%; }
+
+/* line 182, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu li:nth-child(1) {
+  transform: rotate(0deg); }
+  /* line 185, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(1) a {
+    transform: rotate(-0deg);
+    background: #2980b9; }
+  /* line 189, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(1) circle {
+    stroke: #2980b9; }
+
+/* line 192, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.bg-0 {
+  background: #2980b9; }
+
+/* line 182, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu li:nth-child(2) {
+  transform: rotate(71.5deg); }
+  /* line 185, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(2) a {
+    transform: rotate(-71.5deg);
+    background: #c0392b; }
+  /* line 189, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(2) circle {
+    stroke: #c0392b; }
+
+/* line 192, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.bg-1 {
+  background: #c0392b; }
+
+/* line 182, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu li:nth-child(3) {
+  transform: rotate(143deg); }
+  /* line 185, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(3) a {
+    transform: rotate(-143deg);
+    background: #1abc9c; }
+  /* line 189, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(3) circle {
+    stroke: #1abc9c; }
+
+/* line 192, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.bg-2 {
+  background: #1abc9c; }
+
+/* line 182, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu li:nth-child(4) {
+  transform: rotate(214.5deg); }
+  /* line 185, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(4) a {
+    transform: rotate(-214.5deg);
+    background: #f39c12; }
+  /* line 189, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(4) circle {
+    stroke: #f39c12; }
+
+/* line 192, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.bg-3 {
+  background: #f39c12; }
+
+/* line 182, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.menu li:nth-child(5) {
+  transform: rotate(286deg); }
+  /* line 185, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(5) a {
+    transform: rotate(-286deg);
+    background: #8e44ad; }
+  /* line 189, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+  .menu li:nth-child(5) circle {
+    stroke: #8e44ad; }
+
+/* line 192, /Users/moe/Desktop/文化祭ホームページ/sanka_dantai.scss */
+.bg-4 {
+  background: #8e44ad; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1; }
+  80% {
+    transform: rotate(360deg);
+    opacity: 1; }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0; } }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 560;
+    stroke-width: 4rem; }
+  80% {
+    stroke-dashoffset: 0;
+    stroke-width: 4rem;
+    opacity: 1; }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 6rem;
+    opacity: 0; } }
+
+@keyframes buttonactive {
+  0% {
+    background: white;
+    transform: rotate(0deg); }
+  100% {
+    background: #4f6f8f;
+    transform: rotate(-90deg); } }
+
+@keyframes middle {
+  0% {
+    opacity: 1;
+    left: 0; }
+  100% {
+    opacity: 0;
+    left: -4rem; } }
+
+@keyframes top-down {
+  0% {
+    top: 0;
+    transform: rotate(0); }
+  100% {
+    top: 0.35rem;
+    transform: rotate(-45deg); } }
+
+@keyframes down-top {
+  0% {
+    top: 0;
+    transform: rotate(0); }
+  100% {
+    top: -0.4rem;
+    transform: rotate(45deg); } }
+
+@keyframes ripples {
+  0% {
+    opacity: 1.0;
+    transform: scale(0.5);
+    border-width: 3rem; }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+    border-width: 0rem; } }
+
+@keyframes bouncein {
+  to {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=sanka_dantai.css.map */

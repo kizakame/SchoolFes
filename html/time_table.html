@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>sanka_dantai</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+     <link rel="stylesheet" type="text/css" href="/css/time_table.css">
+</head>
+<body>
+ <div class= "header">
+    <a href = "index.html"><button type="button" class="top-page">
+        トップページ
+    </button></a>
+    
+    <a href="time_table.html"><button type="button" class="timetable">
+        タイムテーブル
+    </button></a>
+    
+     <a href = "sanka_dantai.html"><button type="button" class="sannkadanntai">
+        参加団体
+    </button> </a>
+    
+    <a href = "kaisai_jouhou.html"><button type="button" class="kaisaijouhou">
+        開催情報
+        </button> </a>
+   </div>
+<h1>タイムテーブル</h1>
+
+  <div class = "time-table">
+    
+  </div>
+
+<script type="text/javascript">  
+    $('[has-ripple="true"]').click(function () {
+  $(this).toggleClass('clicked');
+  $('.menu').toggleClass('open');
+});
+
+$('.menu a').each(function (index) {
+  var thismenuItem        = $(this);
+  
+  thismenuItem.click(function (event) {
+    event.preventDefault();
+    
+    $('.menuitem-wrapper').eq(index).addClass('spin');
+    
+    var timer = setTimeout(function () {
+      $('body').removeAttr('class').addClass('bg-'+index);
+      $('.menuitem-wrapper').eq(index).removeClass('spin');
+      $('.menu').removeClass('open');
+      $('.menu-btn').removeClass('clicked');
+    }, 800);
+  });
+});
+    </script>
+</body>
+</html>
+
+
+

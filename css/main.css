@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@font-face {
+font-family: 'suushiki.wolf';
+  src: url('/fonts/Planetarium 3.otf');
+}
+@font-face {
+font-family: 'rondeB';
+  src: url('/fonts/Ronde-B_square.otf');
+}
+/*
+.top-top{
+    background-image: url(/1x/cool-background.png);
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    content: "";
+    padding-top: 50%;
+    position: relative;
+    overflow: scroll;
+}
+*/
+
+/*
+#particles-js{
+    position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+*/
+/*
+.top-top::before {
+	display:block;
+	content:"";
+	padding-top:  50%; 
+}
+*/
+
+#square{
+    height: 60vw;
+    position: relative;
+}
+
+h1 {
+    font-size: 5vw;
+    font-family: fantasy;
+    color: blueviolet;
+    position: relative;
+    left: 25%;
+    position: absolute;
+    top: 0px;
+}
+
+h2{
+    font-size: 9vw;
+    font-family: cursive;
+    color: red;
+    position: relative;
+    left: 37vw;
+    position: absolute;
+    top: 20vw;
+    font-family: "suushiki.wolf";
+}
+
+#slideshow1 {
+   position: absolute;
+   width:  267px; /* 画像の横幅に合わせて記述 */
+   height: 179px;/* 画像の高さに合わせて記述 */
+   top: 60%;
+   left: 5%;
+   
+}
+#slideshow1 img {
+   position: absolute;
+   top: 0;
+   left:0;
+   z-index: 8;
+   opacity: 0.0;
+   display: inline-block;
+   border-radius: 50%;
+   width: 18vw;
+   height: 18vw;
+}
+#slideshow1 img.active {
+   z-index: 10;
+   opacity: 1.0;
+}
+#slideshow1 img.last-active {
+   z-index: 9;
+   border-radius: 50%;
+}
+   
+#slideshow2 {
+   position: absolute;
+   width:  267px; /* 画像の横幅に合わせて記述 */
+   height: 179px;/* 画像の高さに合わせて記述 */
+   top: 3%;
+   left: 80%;
+   
+}
+#slideshow2 img {
+   position: absolute;
+   top: 0;
+   left:0;
+   z-index: 8;
+   opacity: 0.0;
+   display: inline-block;
+   border-radius: 50%;
+   width: 18vw;
+   height: 18vw;
+}
+#slideshow2 img.active {
+   z-index: 10;
+   opacity: 1.0;
+}
+#slideshow2 img.last-active {
+   z-index: 9;
+   border-radius: 50%;
+}
+
+
+.main{
+/*    padding-bottom: 100%;*/
+    background-image: url(/1x/background.png);
+    width: 100%;
+    height: 112.44vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 0px;
+/*    overflow: scroll;*/
+}
+
+.header{
+    padding-bottom: 14%;
+    background-image: url(/1x/headernew.png);
+    position: sticky;
+    top: 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+button.top-page{
+    position: relative;
+    width: 7vw;
+    top: 1vw;
+    left: 10vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+
+button.timetable{
+    position: relative;
+    width: 7vw;
+    top: 0.5vw;
+    left: 25vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+button.sannkadanntai{
+    position: relative;
+    width: 7vw;
+    top: 1vw;
+    left: 45vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+button.kaisaijouhou{
+    position: relative;
+    width: 7vw;
+    top: 1vw;
+    left: 60vw;
+    height: 7vw;
+    z-index: 150;
+    background-color: #e8ef7e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-family: "rondeB";
+}
+
+.back{
+    background-color: aliceblue;
+    position: relative;
+    width: 90vw;
+    height: 90vw;
+    left: 5vw;
+    background: rgba(250,250,250,0.5);
+    z-index: 90;
+}
+
+.fukidashi1{
+    background-color: #fff0c6;
+    position: relative;
+    width: 80vw;
+    height: 20vw;
+    left: 8vw;
+    top: 10vw;
+    z-index: 80;
+    border-radius: 3vw;
+}
+
+.fukidashi1::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 10vw;
+    bottom: -5vw;
+    border-top: 5vw solid #fff0c6;
+    border-right: 4vw solid transparent;
+    border-left: 0vw solid transparent;
+}
+
+.fukidashi2{
+    background-color: #fff0c6;
+    position: relative;
+    width: 80vw;
+    height: 20vw;
+    left: 5vw;
+    top: 30vw;
+    z-index: 80;
+    border-radius: 3vw;
+}
+
+.fukidashi2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 65vw;
+    bottom: -5vw;
+    border-top: 5vw solid #fff0c6;
+    border-right: 0vw solid transparent;
+    border-left: 4vw solid transparent;
+}
+
+
+
+
+
+
+
+
